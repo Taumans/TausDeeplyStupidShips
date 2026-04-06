@@ -1,0 +1,16 @@
+outfit "Enginot"
+	category "Engines"
+	series "Engines"
+	index 01011
+	"cost" 0
+	thumbnail "outfit/tiny ion thruster"
+	"mass" 0
+	"outfit space" 0
+	"engine capacity" 0
+	"thrust" 1
+	"thrusting energy" 0
+	"thrusting heat" 0
+	"flare sprite" "effect/ion flare/tiny"
+		"frame rate" 1.2
+	"flare sound" "ion tiny"
+	description "This is where I'd keep my engine. IF I HAD ONE. Don't press W."
