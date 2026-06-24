@@ -1,0 +1,11 @@
+# Write a spaceport thing about Uncle Trusty, the eccentric wealthy weeb-for-human-stuff Hai who has decided that he wishes to emulate a 20th century Earth sketchy used car salesman
+# He builds and sells Real Human-Style Spaceships
+mission "Uncle Trusty Introduction"
+	invisible
+	shipyard
+	source "Makerplace"
+	on offer
+		conversation
+			`You are accosted on your way to the shipyard by a Hai wearing a poorly-fitting suit in a mid 20th century Earth style. He is wearing a nametag which, in fancy-to-the-point-of-near-unintelligiblity cursive, reads UNCLE TRUSTY.`
+			`UNCLE TRUSTY identifies you as a human of wealth and taste, urging you to have a look in a large warehouse adjacent to the main shipyard bearing a gaudy sign reading UNCLE TRUSTY'S RELIABLE SPACESHIPS.`
+			`The Hai assures you that his products are all Real Human-Style spaceships of the highest quality. Well. Have a look!`

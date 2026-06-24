@@ -1,0 +1,852 @@
+ship "Draugnav"
+	sprite "ship/draugnav"
+	thumbnail "thumbnail/vanguard"
+	attributes
+		category "Heavy Warship"
+		"cost" 7200000
+		"shields" 9800
+		"hull" 6000
+		"required crew" 23
+		"bunks" 45
+		"mass" 1030
+		"drag" 12
+		"heat dissipation" .4
+		"fuel capacity" 400
+		"cargo space" 50
+		"outfit space" 560
+		"weapon capacity" 220
+		"engine capacity" 60
+		weapon
+			"blast radius" 160
+			"shield damage" 1600
+			"hull damage" 800
+			"hit force" 2400
+	outfits
+		"Railgun" 7
+		"Anti-Missile Turret"
+		"Railgun Slug" 7000
+		"Fusion Reactor"
+		"LP072a Battery Pack"
+		"D67-TM Shield Generator"
+		"Liquid Nitrogen Cooler"
+		"Laser Rifle" 4
+		
+		"X1100 Ion Reverse Thruster"
+		"X4200 Ion Steering"
+		"Hyperdrive"
+	
+	gun -40.5 47.3
+		angle 180
+	gun 40.5 47.3
+		angle 180
+	gun -35.5 44.3
+		angle 180
+	gun 35.5 44.3
+		angle 180
+	gun -25 122.8
+		angle 180
+	gun 25 122.8
+		angle 180
+	gun 0 129.8
+		angle 180
+	turret 0 -41.7
+	engine -18 -127.2
+	engine 18 -127.2
+	engine -26.5 17.3
+	engine 26.5 17.3
+	"steering engine" -34 -94.2
+	"steering engine" 34 -94.2
+	leak "leak" 60 50
+	leak "flame" 30 80
+	explode "tiny explosion" 18
+	explode "small explosion" 36
+	explode "medium explosion" 24
+	explode "large explosion" 8
+	"final explode" "final explosion medium"
+	description `DRAUGNAV - FOR CAPTAINS WITH GRIT`
+
+ship "Left Hook"
+	sprite "ship/freighter"
+	thumbnail "thumbnail/freighter"
+	attributes
+		category "Light Freighter"
+		"cost" 730000
+		"shields" 2000
+		"hull" 2000
+		"required crew" 2
+		"bunks" 7
+		"mass" 410
+		"drag" 7.6
+		"heat dissipation" .45
+		"fuel capacity" 600
+		"cargo space" 75
+		"outfit space" 400
+		"weapon capacity" 220
+		"engine capacity" 70
+		weapon
+			"blast radius" 40
+			"shield damage" 400
+			"hull damage" 200
+			"hit force" 600
+	outfits
+		
+		"nGVF-DD Fuel Cell"
+		"LP072a Battery Pack"
+		"D14-RN Shield Generator"
+		"Proton Gun" 7
+		"X2700 Ion Thruster"
+		"X2200 Ion Steering"
+		"X1100 Ion Reverse Thruster"
+		"Scram Drive"
+		
+	engine -7.5 92
+	engine 7.5 92
+	gun 16.5 -43
+		angle 90
+		parallel
+	gun 14 -29.5
+		angle 90
+		parallel
+	gun 14.5 -14.5
+		angle 90
+		parallel
+	gun 15 1
+		angle 90
+		parallel
+	gun 15 16
+		angle 90
+		parallel
+	gun 14.5 30
+		angle 90
+		parallel
+	gun 14.5 45
+		angle 90
+		parallel
+	leak "leak" 60 50
+	leak "flame" 50 80
+	explode "tiny explosion" 10
+	explode "small explosion" 30
+	explode "medium explosion" 20
+	"final explode" "final explosion small"
+	description "LEFT HOOK! It'll knock you out!!!"
+
+ship "protecc"
+	sprite "ship/protecc"
+	thumbnail "ship/protecc_thumb"
+	attributes
+		category "Medium Warship"
+		"cost" 2500000
+		"shields" 5000
+		"hull" 3800
+		"required crew" 15
+		"bunks" 35
+		"mass" 650
+		"drag" 16.5
+		"heat dissipation" .38
+		"fuel capacity" 400
+		"cargo space" 30
+		"outfit space" 390
+		"weapon capacity" 130
+		"engine capacity" 100
+		weapon
+			"blast radius" 160
+			"shield damage" 1600
+			"hull damage" 800
+			"hit force" 2400
+	outfits
+		"Energy Blaster" 9
+		
+		"Dwarf Core"
+		"LP288a Battery Pack"
+		"D67-TM Shield Generator"
+		"Small Radar Jammer" 3
+		"Cooling Ducts"
+		"Laser Rifle" 3
+		
+		"X3700 Ion Thruster"
+		"X2200 Ion Steering"
+		"Hyperdrive"
+		
+	gun 0 -37.7
+		angle -10
+	gun -22.5 -22.2
+		angle -27
+	gun -33.5 0.8
+		angle -79
+	gun -24 24.3
+		angle -153
+	gun 0 15.8
+		angle 170
+	gun 23 24.3
+		angle 106
+	gun 34 1.3
+		angle 101
+	gun 24.5 -22.7
+		angle 53
+	gun 1 -13.2
+		angle 7
+	engine -7 57.3
+	engine 7 57.3
+	"reverse engine" 0 -55.7
+	leak "leak" 60 50
+	leak "flame" 20 80
+	explode "tiny explosion" 18
+	explode "small explosion" 36
+	explode "medium explosion" 24
+	explode "large explosion" 8
+	"final explode" "final explosion large"
+	description `protecc bees atta alla direc`
+
+ship "Really Cool Sparrow"
+	sprite "ship/sparrow"
+	thumbnail "thumbnail/sparrow"
+	attributes
+		category "Interceptor"
+		"cost" 225000
+		"shields" 1400
+		"hull" 300
+		"required crew" 1
+		"bunks" 3
+		"mass" 50
+		"drag" .95
+		"heat dissipation" .77
+		"fuel capacity" 300
+		"cargo space" 15
+		"outfit space" 130
+		"weapon capacity" 25
+		"engine capacity" 20
+		weapon
+			"blast radius" 16
+			"shield damage" 160
+			"hull damage" 80
+			"hit force" 240
+	outfits
+		"Railgun" 4
+		
+		"nGVF-BB Fuel Cell"
+		"LP036a Battery Pack"
+		"D14-RN Shield Generator"
+		"Railgun Slug" 4000
+		"A125 Atomic Steering"
+		"Enginot"
+		"Hyperdrive"
+		
+	engine -5 35
+	engine 5 35
+	gun -7 -10
+		angle 180
+	gun 7 -10
+		angle 180
+	gun -10.5 -8.5
+		angle 180
+	gun 10.5 -8.5
+		angle 180
+	leak "flame" 60 80
+	explode "tiny explosion" 15
+	explode "small explosion" 5
+	description "The REALLY COOL part is how this Sparrow saves cost, complexity, and mass by ditching the old, outdated method of attaching so-called 'thruster engines' to spaceships in favor of something which provides both propulsion AND defense - guns."
+
+ship "Efficiency's Favored Child"
+	sprite "ship/osprey"
+	thumbnail "thumbnail/osprey"
+	attributes
+		category "Medium Warship"
+		"cost" 8200000
+		"shields" 15500
+		"hull" 4900
+		"required crew" 14
+		"bunks" 24
+		"mass" 630
+		"drag" 8.9
+		"heat dissipation" .54
+		"fuel capacity" 600
+		"cargo space" 40
+		"outfit space" 450
+		"weapon capacity" 200
+		"engine capacity" 60
+		weapon
+			"blast radius" 80
+			"shield damage" 800
+			"hull damage" 400
+			"hit force" 1200
+	outfits
+		"Plasma Cannon" 4
+		"Railgun" 7
+		"Chameleon Anti-Missile" 2
+		"Railgun Slug"	7000
+		"Geode Reactor"
+		"Hai Fissure Batteries"
+		"Hai Diamond Regenerator" 2
+		"Hai Williwaw Cooling" 2
+		"Pulse Rifle" 10
+		
+		`"Basrem" Reverse Thruster`
+		`"Bondir" Atomic Steering`
+		"Hyperdrive"
+		
+	gun -24.5 95.8 "Railgun"
+		angle 180
+	gun 24.5 95.8 "Railgun"
+		angle -180
+	gun -39.5 62.3 "Railgun"
+		angle 180
+	gun 39.5 62.3 "Railgun"
+		angle -180
+	gun -14 95.8 "Railgun"
+		angle 180
+	gun 14 95.8 "Railgun"
+		angle -180
+	gun 0 96.3 "Railgun"
+		angle 180
+	gun -25 -35.2
+	gun 25 -35.2
+	gun -9 -81.2
+	gun 9 -81.2
+	turret -15.5 -12.2
+	turret 15.5 -12.2
+	"reverse engine" -43 14.3
+	"reverse engine" 43 14.3
+	leak "leak" 40 50
+	leak "flame" 80 80
+	leak "big leak" 80 30
+	explode "medium explosion" 24
+	explode "large explosion" 16
+	explode "small explosion" 40
+	explode "tiny explosion" 28
+	"final explode" "final explosion medium"
+	description "This ship is an almost entirely custom build - it maintains the exterior form of the Osprey, but is built with Hai technology bringing its durability in line with a Sea Scorpion. It has also had its thrusters ripped out entirely, mount and all to be replaced with rear-facing guns. This brilliant engineering decision allows it to use some of the most efficient engines in the galaxy - Skipper Railguns. Enjoy the savings in outfit space, heat, and energy afforded by 100% all-natural recoil-based thrust."
+
+ship "Merganser Sidestep Special"
+	sprite "ship/merganser"
+	thumbnail "thumbnail/merganser"
+	attributes
+		category "Interceptor"
+
+		"cost" 4830000
+		"shields" 3500
+		"hull" 3000
+		"required crew" 1
+		"bunks" 3
+		"cargo space" 11
+		"fuel capacity" 600
+		"ramscoop" 1.75
+		"mass" 130
+		"drag" 1.7
+		"heat dissipation" .75
+		"gaslining" 1
+		"outfit space" 200
+		"weapon capacity" 75
+		"engine capacity" 64
+		"shield generation" 1.4
+		"shield energy" 1.2
+		"hull repair rate" 0.9
+		"hull energy" 0.6
+		"cloak" .03
+		"cloaked shield permeability" 1
+		"cloaking energy" 4
+		"cloaking fuel" .075
+		"cloaked communication" 1
+		"atmosphere scan" 100
+		"outfit scan power" 12
+		"outfit scan efficiency" 12
+		"tactical scan power" 26
+		"ion resistance" 0.06
+		"scramble resistance" 0.06
+		"thrust" 7.5
+		"turn" 90.0
+		"reverse thrust" 7.5
+		"thrusting energy" 0.75
+		"thrusting heat" 0.7
+		"turning energy" 0.15
+		"turning heat" 0.2
+		"reverse thrusting energy" 0.75
+		"reverse thrusting heat" 0.7
+		"flare sprite" "effect/remnant flare/small"
+			"frame rate" 5
+		"flare sound" "plasma tiny"
+		"steering flare sprite" "effect/remnant flare/small"
+			"frame rate" 5
+		"steering flare sound" "plasma tiny"
+		"reverse flare sprite" "effect/remnant flare/small"
+			"frame rate" 5
+		"reverse flare sound" "plasma tiny"
+		
+		weapon
+			"blast radius" 10
+			"shield damage" 100
+			"hull damage" 150
+			"hit force" 250
+	outfits
+		"Inhibitor Cannon" 2
+		"Sidestep"
+		"Sidestep Cannonball" 50
+		"Millennium Cell" 2
+		"Crystal Capacitor"
+		"Small Heat Shunt"
+		"Quantum Key Stone"
+		
+		"Crucible-Class Thruster"
+		"Crucible-Class Steering"
+		"Bellows-Class Afterburner"
+		"Hyperdrive"
+		
+	gun 0 -48.5
+	gun -6 -41 "Inhibitor Cannon"
+	gun 6 -41 "Inhibitor Cannon"
+	gun 19 -0.2 "Sidestep"
+		angle 90
+	turret 0 0
+	engine 0 45
+	engine -10 49
+	engine 10 49
+	explode "tiny explosion" 30
+	explode "small explosion" 20
+	description "This poor Merganser has been refitted with alien technology and had a crude cannon installed sideways."
+
+ship "Broadside"
+	sprite "ship/skein"
+	thumbnail "thumbnail/skein"
+	attributes
+		category "Utility"
+		"cost" 3500000
+		"shields" 3300
+		"hull" 6700
+		"required crew" 7
+		"bunks" 18
+		"mass" 850
+		"drag" 11.6
+		"heat dissipation" .51
+		"fuel capacity" 700
+		"cargo space" 390
+		"outfit space" 500
+		"weapon capacity" 200
+		"engine capacity" 80
+		weapon
+			"blast radius" 100
+			"shield damage" 1000
+			"hull damage" 500
+			"hit force" 1500
+	outfits
+		"Empty Boxwing Cannon" 3
+		"Heavy Anti-Missile Turret"
+		
+		"S3 Thermionic"
+		"LP072a Battery Pack"
+		"D67-TM Shield Generator" 1
+		"Tactical Scanner"
+		"Laser Rifle" 4
+		
+		"Greyhound Plasma Thruster"
+		"Impala Plasma Steering"
+		"Capybara Reverse Thruster"
+		"Hyperdrive"
+
+	gun 47 -61
+		angle 90
+	gun 47 14
+		angle 90
+	gun 47 88
+		angle 90
+	turret 21.5 -122
+	turret 18.5 152.5
+	engine -45 196.5
+	engine 45 196.5
+	leak "leak" 50 50
+	leak "flame" 40 80
+	leak "big leak" 70 30
+	explode "small explosion" 15
+	explode "medium explosion" 30
+	explode "large explosion" 20
+	explode "huge explosion" 5
+	"final explode" "final explosion large"
+	description `This Skein has had its fighter bays converted back into cargo holds, but kept the carrier form. This is to enable use of the ill-advised Boxwing Cannon.`
+
+ship "prot"
+	sprite "ship/prot"
+	thumbnail "ship/prot_thumb"
+	attributes
+		category "Interceptor"
+		"cost" 550000
+		"shields" 1000
+		"hull" 800
+		"required crew" 10
+		"bunks" 20
+		"mass" 225
+		"drag" 2.5
+		"heat dissipation" .38
+		"fuel capacity" 400
+		"cargo space" 15
+		"outfit space" 160
+		"weapon capacity" 40
+		"engine capacity" 50
+		weapon
+			"blast radius" 160
+			"shield damage" 1600
+			"hull damage" 800
+			"hit force" 2400
+	outfits
+		"KGS Mini Blaster" 8
+		
+		"nGVF-CC Fuel Cell"
+		"LP036a Battery Pack"
+		"D14-RN Shield Generator"
+		"Small Radar Jammer"
+		"Laser Rifle" 3
+		
+		"X2700 Ion Thruster"
+		"X2200 Ion Steering"
+		"Hyperdrive"
+		
+	gun -0.2 -22.3
+		angle 3
+	gun 0 12.2
+		angle 175
+	gun -12.6 -12.8
+		angle -42
+	gun 12.2 -12.7
+		angle 39
+	gun -16.7 -0.4
+		angle -98
+	gun 17.1 -0.1
+		angle 83
+	gun -12.1 11.4
+		angle -120
+	gun 11.9 10.7
+		angle 152
+	engine -3.3 27.1
+		angle 178
+	engine 2.9 25.9
+		angle 186
+	leak "leak" 60 50
+	leak "flame" 20 80
+	explode "tiny explosion" 18
+	explode "small explosion" 36
+	explode "medium explosion" 24
+	explode "large explosion" 8
+	"final explode" "final explosion large"
+	description `prot smol`
+
+ship "Combat Microdrone"
+	sprite "ship/combat drone"
+	thumbnail "thumbnail/combat drone"
+	"never disabled"
+	attributes
+		category "Microdrone"
+		"cost" 30000
+		"hull" 350
+		"automaton" 1
+		"mass" 18
+		"drag" .59
+		"heat dissipation" .9
+		"outfit space" 35
+		"weapon capacity" 5
+		"engine capacity" 25
+
+		weapon
+			"blast radius" 5
+			"shield damage" 50
+			"hull damage" 25
+			"hit force" 75
+	outfits
+		"KGS Gatling Snubnose"
+		"Gatling Gun Ammo" 150
+		"Supercapacitor"
+		"Microdrone Active Cooler"
+		
+		"Compact Ion Flash Engines"
+		
+	engine -8.5 28.5 0.9
+	engine 8.5 28.5 0.9
+	gun 0 -29
+	explode "tiny explosion" 15
+	description "Combat Microdrones are disposable units meant to be deployed and forgotten. They do not have reactors or shields and only the minimum viable hull plating. This model is equipped with a Gatling Snubnose to deliver high amounts of hull damage in its short lifespan."
+	description "	Drones do not come equipped with a hyperdrive. You cannot carry a drone unless you have a ship in your fleet with a drone bay."
+
+ship "Arby's"
+	sprite "ship/aerie"
+	thumbnail "thumbnail/aerie"
+	attributes
+		category "Medium Warship"
+		"cost" 3500000
+		"shields" 5700
+		"hull" 1900
+		"required crew" 10
+		"bunks" 28
+		"mass" 390
+		"drag" 6.15
+		"heat dissipation" .47
+		"fuel capacity" 500
+		"cargo space" 50
+		"outfit space" 390
+		"weapon capacity" 100
+		"engine capacity" 95
+		weapon
+			"blast radius" 80
+			"shield damage" 800
+			"hull damage" 400
+			"hit force" 1200
+	outfits
+		"Plasma Cannon" 2
+		"Heavy Anti-Missile Turret"
+		
+		"NT-200 Nucleovoltaic"
+		"KP-6 Photovoltaic Panel" 2
+		"LP072a Battery Pack"
+		"D41-HY Shield Generator"
+		"Large Radar Jammer"
+		"Laser Rifle" 3
+		
+		"X3700 Ion Thruster"
+		"X3200 Ion Steering"
+		"Hyperdrive"
+		
+	engine 15 97
+	engine -15 97
+	gun -12 -78 "Plasma Cannon"
+	gun 12 -78 "Plasma Cannon"
+	turret 0 1.5 "Heavy Anti-Missile Turret"
+	bay "Microdrone" -43.5 2
+		"launch effect" "human internal"
+	bay "Microdrone" 43.5 2
+		"launch effect" "human internal"
+	bay "Microdrone" -43.5 2
+		"launch effect" "human internal"
+	bay "Microdrone" 43.5 2
+		"launch effect" "human internal"
+	bay "Microdrone" -45.5 2
+		"launch effect" "human internal"
+	bay "Microdrone" 45.5 2
+		"launch effect" "human internal"
+	bay "Microdrone" -45.5 2
+		"launch effect" "human internal"
+	bay "Microdrone" 45.5 2
+		"launch effect" "human internal"
+	bay "Microdrone" -45.5 2
+		"launch effect" "human internal"
+	bay "Microdrone" 45.5 2
+		"launch effect" "human internal"
+	leak "leak" 50 50
+	leak "flame" 50 80
+	leak "big leak" 90 30
+	explode "tiny explosion" 10
+	explode "small explosion" 25
+	explode "medium explosion" 25
+	explode "large explosion" 10
+	"final explode" "final explosion medium"
+	description "The Arby's is a light carrier, shamelessly plagarized from the Lionheart Aerie. Its fighter bays have been modified to house ten microdrones, and its offensive complement reduced to accomodate."
+
+ship "Galaga"
+	sprite "ship/fury"
+	thumbnail "thumbnail/fury"
+	attributes
+		category "Interceptor"
+		"cost" 490000
+		"shields" 2000
+		"hull" 400
+		"required crew" 1
+		"bunks" 3
+		"mass" 105
+		"drag" 1.8
+		"heat dissipation" .79
+		"fuel capacity" 600
+		"cargo space" 15
+		"outfit space" 160
+		"weapon capacity" 40
+		"engine capacity" 60
+		weapon
+			"blast radius" 24
+			"shield damage" 240
+			"hull damage" 120
+			"hit force" 360
+	outfits
+		"Energy Blaster" 6
+		
+		"nGVF-CC Fuel Cell"
+		"LP036a Battery Pack"
+		"D14-RN Shield Generator"
+		
+		"Chipmunk Plasma Thruster"
+		"X2200 Ion Steering"
+		"Hyperdrive"
+		
+	engine -11 35 0.8
+	engine 11 35 0.8
+	engine -18 37 0.6
+	engine 18 37 0.6
+	gun -11 -28
+		angle -10
+	gun 11 -28
+		angle 10
+	gun -17 -19.5
+		angle -20
+	gun 17 -19.5
+		angle 20
+	gun -5.5 -33
+	gun 5.5 -33
+	leak "flame" 50 80
+	explode "tiny explosion" 10
+	explode "small explosion" 20
+	description "Southbound Shipyards' Fury is a scary little interceptor. The gun ports on this one have been spread for reasons unknown to modern science."
+
+ship "Marder Vanguard"
+	sprite "ship/vanguard"
+	thumbnail "thumbnail/vanguard"
+	attributes
+		category "Heavy Warship"
+		"cost" 7200000
+		"shields" 9800
+		"hull" 6000
+		"required crew" 23
+		"bunks" 45
+		"mass" 1030
+		"drag" 12
+		"heat dissipation" .4
+		"fuel capacity" 400
+		"cargo space" 50
+		"outfit space" 560
+		"weapon capacity" 220
+		"engine capacity" 120
+		weapon
+			"blast radius" 160
+			"shield damage" 1600
+			"hull damage" 800
+			"hit force" 2400
+	outfits
+		"Proton Gun" 7
+		"Anti-Missile Turret"
+
+		"Fusion Reactor"
+		"LP072a Battery Pack"
+		"D67-TM Shield Generator"
+		"Liquid Nitrogen Cooler"
+		"Laser Rifle" 4
+		
+		"X3700 Ion Thruster"
+		"X4200 Ion Steering"
+		"Hyperdrive"
+	
+	gun 0 -132.5
+		parallel
+	gun -24 -122.5
+		angle -10
+		parallel
+	gun 24 -122.5
+		angle 10
+		parallel
+	gun -40 -47.5
+		angle -30
+		parallel
+	gun 40 -47.5
+		angle 30
+		parallel
+	gun -35 -44.5
+		angle -20
+		parallel
+	gun 35 -44.5
+		angle 20
+		parallel
+	turret 0 42
+	engine -16.5 131
+	engine 16.5 131
+	turret 0 42 "Anti-Missile Turret"
+	leak "leak" 60 50
+	leak "flame" 30 80
+	explode "tiny explosion" 18
+	explode "small explosion" 36
+	explode "medium explosion" 24
+	explode "large explosion" 8
+	"final explode" "final explosion medium"
+	description `The Vanguard is Syndicated Systems' crapbucket budget heavy warship. This one has been "improved" by spreading the gun ports outward. It makes a pretty light show, at least.`
+
+ship "Ultra-Sick Turbo Flivver"
+	sprite "ship/flivver"
+	thumbnail "thumbnail/flivver"
+	attributes
+		category "Interceptor"
+		"cost" 1800000
+		"shields" 14000
+		"hull" 2000
+		"required crew" 1
+		"bunks" 3
+		"mass" 90
+		"drag" 1.05
+		"heat dissipation" .86
+		"fuel capacity" 500
+		"cargo space" 15
+		"outfit space" 185
+		"weapon capacity" 60
+		"engine capacity" 64
+		weapon
+			"blast radius" 16
+			"shield damage" 160
+			"hull damage" 80
+			"hit force" 240
+	outfits
+		
+		"Reaction Beam"
+		"Ka'het MHD Generator" 2
+		"Supercapacitor"
+		"Small Heat Shunt"
+		"Fuel Processor"
+		"Crucible-Class Steering"
+		"Crucible-Class Thruster"
+		"Bellows-Class Afterburner"
+		"Hyperdrive"
+		"Jump Drive"
+		
+	engine -16.5 26
+	engine 16.5 26
+	gun -6 -35.5
+	gun 6 -35.5
+	gun 0 -35.5
+	leak "leak" 60 50
+	explode "tiny explosion" 10
+	explode "small explosion" 10
+	description "If not Flivver, why Flivver-shaped?"
+
+ship "Ultra-Sick Turbo Flivver DEBUG"
+	sprite "ship/flivver"
+	thumbnail "thumbnail/flivver"
+	attributes
+		category "Interceptor"
+		"cost" 180
+		"shields" 14000
+		"hull" 2000
+		"required crew" 1
+		"bunks" 3
+		"mass" 90
+		"drag" 1.05
+		"heat dissipation" .86
+		"fuel capacity" 500
+		"cargo space" 15
+		"outfit space" 1850
+		"weapon capacity" 600
+		"engine capacity" 640
+		weapon
+			"blast radius" 16
+			"shield damage" 160
+			"hull damage" 80
+			"hit force" 240
+	outfits
+		
+		"Reaction Beam"
+		"Ka'het MHD Generator" 2
+		"Blue Sun Reactor"
+		"Supercapacitor"
+		"Large Heat Shunt"
+		"Fuel Processor"
+		"Crucible-Class Steering"
+		"Crucible-Class Thruster"
+		"Bellows-Class Afterburner"
+		"Hyperdrive"
+		"Jump Drive"
+		
+	engine -16.5 26
+	engine 16.5 26
+	gun -6 -35.5
+	gun 6 -35.5
+	gun 0 -35.5
+	leak "leak" 60 50
+	explode "tiny explosion" 10
+	explode "small explosion" 10
+	description "If not Flivver, why Flivver-shaped?"

@@ -1,0 +1,12 @@
+name "Tau's Deeply Stupid Ships"
+version 2.0.0
+authors
+	Tau
+tags
+	ships
+	weapons
+about "A silly plugin full of goofy ships and weapons I made for fun."
+about "Rav and Fat Pigeon visuals provided by kaiboyjiang, who is very cool."
+about "Interceptor Prot relies on KGS plugin content by kaiboyjiang"
+about "https://github.com/Taumans/TausDeeplyStupidShips"
+about "plugins"

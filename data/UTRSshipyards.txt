@@ -1,0 +1,6 @@
+shipyard "Uncle Trusty's Reliable Spaceships"
+	"Rav"
+	"Pigeon"
+shipyard "Basic Ships"
+	"Rav"
+	"Pigeon"

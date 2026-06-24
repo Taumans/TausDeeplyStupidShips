@@ -1,0 +1,111 @@
+ship "Rav"
+	sprite "ship/rav_1"
+	thumbnail "ship/rav"
+	attributes
+		category "Light Warship"
+		"cost" 3200000
+		"shields" 5500
+		"hull" 1500
+		"required crew" 6
+		"bunks" 13
+		"mass" 250
+		"drag" 4.3
+		"heat dissipation" .52
+		"fuel capacity" 500
+		"cargo space" 20
+		"outfit space" 280
+		"weapon capacity" 116
+		"engine capacity" 90
+		weapon
+			"blast radius" 60
+			"shield damage" 600
+			"hull damage" 300
+			"hit force" 900
+	outfits
+		"Tripulse Shredder" 2
+		"Hai Tracker Pod" 2
+		"Hai Tracker" 140
+
+		"Pebble Core"
+		"Hai Fissure Batteries"
+		"Hai Chasm Batteries"
+		"Supercapacitor" 2
+		"Hai Corundum Regenerator"
+		"Pulse Rifle" 2
+		"Quantum Keystone"
+		"Outfits Expansion"
+		
+		`"Biroo" Atomic Thruster`
+		`"Biroo" Atomic Steering`
+		"Volcano Afterburner"
+		"Hyperdrive"
+		
+	engine -9.5 63
+	engine 9.5 63
+	gun -13.5 -35.5 "Tripulse Shredder"
+	gun 13.5 -35.5 "Tripulse Shredder"
+	gun -21 -28 "Hai Tracker Pod"
+	gun 21 -28 "Hai Tracker Pod"
+	leak "leak" 60 50
+	leak "flame" 50 80
+	explode "medium explosion" 24
+	explode "large explosion" 16
+	explode "tiny explosion" 28
+	explode "small explosion" 40
+	"final explode" "final explosion small"
+	description "Uncle Trusty thought the Raven was very cool, but would be -even cooler- if the wings weren't so long. So he had them chopped off. Plagued by both energy and heat problems, but sacrifices had to be made for -the aesthetic-"
+
+ship "Pigeon"
+	sprite "ship/chubbyraven_1"
+	thumbnail "ship/chubbyraven"
+	attributes
+		category "Heavy Warship"
+		"cost" 1
+		"shields" 40000
+		"hull" 12000
+		"required crew" 40
+		"bunks" 90
+		"mass" 1600
+		"drag" 18
+		"heat dissipation" .42
+		"fuel capacity" 600
+		"cargo space" 100
+		"outfit space" 785
+		"weapon capacity" 300
+		"engine capacity" 200
+		weapon
+			"blast radius" 400
+			"shield damage" 4000
+			"hull damage" 2000
+			"hit force" 3000
+	outfits
+		"Tripulse Shredder" 6
+
+		"Boulder Reactor"
+		"Geode Reactor"
+		"Hai Valley Batteries"
+		"Hai Diamond Regenerator" 2
+		"Hai Williwaw Cooling" 2
+		"Pulse Rifle" 40
+		"Quantum Keystone"
+		
+		`"Bufaer" Atomic Thruster`
+		`"Bufaer" Atomic Steering`
+		"Hyperdrive"
+		
+	gun -158.8 -145.5
+	gun 158.8 -145.5
+	gun -81.7 -101.4
+	gun 81.7 -101.4
+	gun -52.3 -139.1
+	gun 52.3 -139.1
+	engine -45 217.1
+	engine 45 217.1
+	leak "leak" 60 50
+	leak "flame" 50 80
+	explode "medium explosion" 24
+	explode "large explosion" 16
+	explode "tiny explosion" 28
+	explode "small explosion" 40
+	"final explode" "final explosion large"
+	description "Okay look. Let's get this out in the open - this was 100% a scaling mistake in CAD. But here it is. Uncle Trusty says it is solid. You can trust him."
