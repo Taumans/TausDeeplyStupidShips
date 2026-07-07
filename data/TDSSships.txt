@@ -764,18 +764,18 @@ ship "Ultra-Sick Turbo Flivver"
 	attributes
 		category "Interceptor"
 		"cost" 1800000
-		"shields" 14000
+		"shields" 9900
 		"hull" 2000
 		"required crew" 1
-		"bunks" 3
-		"mass" 90
-		"drag" 1.05
+		"bunks" 1
+		"mass" 86
+		"drag" 1.15
 		"heat dissipation" .86
 		"fuel capacity" 500
 		"cargo space" 15
-		"outfit space" 185
-		"weapon capacity" 60
-		"engine capacity" 64
+		"outfit space" 232
+		"weapon capacity" 64
+		"engine capacity" 59
 		weapon
 			"blast radius" 16
 			"shield damage" 160
@@ -784,21 +784,21 @@ ship "Ultra-Sick Turbo Flivver"
 	outfits
 		
 		"Reaction Beam"
-		"Ka'het MHD Generator" 2
-		"Supercapacitor"
-		"Small Heat Shunt"
+		"Improved Shard Fabricator" 2
+		"Plasma Core"
+		"Crystal Capacitor"
+		"Ka'het Support Cooling"
 		"Fuel Processor"
-		"Crucible-Class Steering"
+		"Large Steering Module"
 		"Crucible-Class Thruster"
 		"Bellows-Class Afterburner"
-		"Hyperdrive"
 		"Jump Drive"
 		
 	engine -16.5 26
 	engine 16.5 26
-	gun -6 -35.5
-	gun 6 -35.5
-	gun 0 -35.5
+	gun -6 -35.5 "Improved Shard Fabricator"
+	gun 6 -35.5 "Improved Shard Fabricator"
+	gun 0 -35.5 "Reaction Beam"
 	leak "leak" 60 50
 	explode "tiny explosion" 10
 	explode "small explosion" 10
