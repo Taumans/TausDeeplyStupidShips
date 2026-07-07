@@ -355,3 +355,62 @@ outfit "Plasma Gatling"
 		"hull damage" 18
 		"heat damage" 220
 	description `Following the Pug incident, the value of dumping immense amounts of shield damage all at once became a hot topic among many involved. Thus, this weapon was born - a plasma cannon attached to a bank of capacitors allowing for a very fast, very hot, very energy-intensive burst of shield-shredding damage.`
+
+outfit "Improved Shard Fabricator"
+	category "Secondary Weapons"
+	series "Secondary Weapons"
+	index 13010
+	cost 330000
+	thumbnail "outfit/shard"
+	"mass" 30
+	"outfit space" -15
+	"weapon capacity" -13
+	"gun ports" -1
+	"operating costs" 150
+	weapon
+		sprite "projectile/shardactive"
+			"frame rate" 30
+			"random start frame"
+		sound "grab-strike"
+		icon "icon/shard"
+		"fire effect" "basic launch"
+		"hit effect" "improved shard impact"
+		"submunition" "improved shard inactive"
+		"inaccuracy" 80
+		"velocity" 12
+		"lifetime" 40
+		"random lifetime" 20
+		"reload" 6
+		"firing energy" 40
+		"firing ion" 2
+		"firing heat" 60
+		"acceleration" 1.5
+		"drag" .1
+		"turn" 8
+		"homing"
+			"leading"
+			"throttle control"
+		"radar tracking" .8
+		"missile strength" 1
+	description "Advances in flash-printing techniques, combined with Sheragi Shard Fabricator technology, have produced this weapon. It is capable of sustaining a far higher fire rate than the original, but with mounting energy debt."
+
+outfit "improved shard inactive"
+	weapon
+		sprite "projectile/shardinactive"
+			"frame rate" 5
+			"random start frame"
+		"hit effect" "shard impact"
+		"die effect" "missile death"
+		"lifetime" 60
+		"random lifetime" 40
+		"hit force" 30
+		"shield damage" 43
+		"hull damage" 57
+
+effect "improved shard impact"
+	sprite "effect/particle impact"
+		"no repeat"
+		"frame rate" 30
+	sound "explosion tiny"
+	"lifetime" 30
+	"velocity scale" 0
