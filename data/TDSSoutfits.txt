@@ -439,11 +439,77 @@ outfit "Anti-Mini-Blaster-Missile"
 		"anti-missile" 5
 	description "This variant of the Mini Blaster is loaded with additional equipment shamelessly stolen from the ubiquitous Anti-Missile Turret. So it can shoot down missiles. Being a static gun port, this is of questionable utility, but you do you, Captain."
 
-effect "kgs mini blaster impact"
-	sprite "effect/blaster impact"
-		"scale" 0.6
-		"no repeat"
-		"frame rate" 30
-	"lifetime" 7
-	"random angle" 40
-	"velocity scale" -.05
+outfit "Infinite Sun Setting With Finality"
+	category "Secondary Weapons"
+	series "Secondary Weapons"
+	index 09010
+	cost 4500000
+	thumbnail "outfit/thunderhead launcher"
+	"mass" 11
+	"outfit space" -2
+	"weapon capacity" -2
+	"gun ports" -1
+	"fist capacity" 560
+	weapon
+		sprite "projectile/shardactive"
+			"no repeat"
+			"frame rate" .1
+		sound "thunderhead"
+		ammo "Fist"
+		icon "icon/thunderhead"
+		"submunition" "Fist Missile" 25
+		"split range" 20
+		"fire effect" "meteor fire"
+		"die effect" "missile death"
+		"hit effect" "medium explosion"
+		"inaccuracy" 10
+		"velocity" 4
+		"lifetime" 60
+		"reload" 75
+		"firing energy" 18
+		"firing heat" 36
+		"acceleration" 1.1
+		"drag" .1
+		"turn" 2
+		"homing"
+			"leading"
+			"throttle control"
+		"infrared tracking" 1.
+		"radar tracking" .3
+		"missile strength" 12
+	description "DO NOT"
+
+outfit "Fist"
+	category "Ammunition"
+	series "Ammunition"
+	index 09010
+	cost 18
+	thumbnail "outfit/thunderhead"
+	mass .27
+	"fist capacity" -1
+	description "Bad idea."
+
+outfit "Fist Missile"
+	weapon
+		sprite "projectile/shardinactive"
+			"no repeat"
+			"frame rate" .1
+		"die effect" "missile death"
+		"hit effect" "small explosion"
+		"inaccuracy" 90
+		"velocity" 2
+		"lifetime" 30
+		"submunition" "Fist Missile" 25
+		"acceleration" 1.4
+		"drag" .1
+		"turn" 3
+		"homing"
+			"leading"
+			"throttle control"
+		"infrared tracking" 1.
+		"radar tracking" .3
+		"shield damage" 110
+		"hull damage" 80
+		"hit force" 225
+		"missile strength" 3
+
