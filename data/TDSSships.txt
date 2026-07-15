@@ -745,7 +745,6 @@ ship "Marder Vanguard"
 	gun 35 -44.5
 		angle 20
 		parallel
-	turret 0 42
 	engine -16.5 131
 	engine 16.5 131
 	turret 0 42 "Anti-Missile Turret"
@@ -850,3 +849,65 @@ ship "Ultra-Sick Turbo Flivver DEBUG"
 	explode "tiny explosion" 10
 	explode "small explosion" 10
 	description "If not Flivver, why Flivver-shaped?"
+
+ship "tecc"
+	sprite "ship/prot"
+	thumbnail "ship/prot_thumb"
+	attributes
+		category "Fighter"
+		"cost" 550000
+		"shields" 500
+		"hull" 400
+		"required crew" 1
+		"bunks" 1
+		"mass" 175
+		"drag" 3.5
+		"heat dissipation" .38
+		"cargo space" 0
+		"outfit space" 160
+		"weapon capacity" 40
+		"engine capacity" 50
+		weapon
+			"blast radius" 160
+			"shield damage" 1600
+			"hull damage" 800
+			"hit force" 2400
+	outfits
+		"Anti-Mini-Blaster-Missile" 8
+		
+		"nGVF-AA Fuel Cell"
+		"LP036a Battery Pack"
+		"D14-RN Shield Generator"
+		
+		"X2700 Ion Thruster"
+		"X2200 Ion Steering"
+		"Hyperdrive"
+		
+	gun -0.2 -22.3
+		angle 3
+	gun 0 12.2
+		angle 175
+	gun -12.6 -12.8
+		angle -42
+	gun 12.2 -12.7
+		angle 39
+	gun -16.7 -0.4
+		angle -98
+	gun 17.1 -0.1
+		angle 83
+	gun -12.1 11.4
+		angle -120
+	gun 11.9 10.7
+		angle 152
+	engine -3.3 27.1
+		angle 178
+	engine 2.9 25.9
+		angle 186
+	leak "leak" 60 50
+	leak "flame" 20 80
+	explode "tiny explosion" 18
+	explode "small explosion" 36
+	explode "medium explosion" 24
+	explode "large explosion" 8
+	"final explode" "final explosion large"
+	description `tecc protecc`

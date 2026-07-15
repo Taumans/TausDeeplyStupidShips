@@ -414,3 +414,36 @@ effect "improved shard impact"
 	sound "explosion tiny"
 	"lifetime" 30
 	"velocity scale" 0
+
+outfit "Anti-Mini-Blaster-Missile"
+	"display name" "Mini Blaster"
+	category "Guns"
+	series "Guns"
+	index 01010
+	cost 9000
+	thumbnail "outfit/kgs_mini_blaster"
+	"mass" 4
+	"outfit space" -4
+	"weapon capacity" -4
+	"gun ports" -1
+	weapon
+		sprite "projectile/kgs_mini_blaster"
+		sound "blaster"
+		"hit effect" "kgs mini blaster impact"
+		"inaccuracy" 4.5
+		"velocity" 10
+		"lifetime" 40
+		"reload" 15
+		"firing energy" 4.5
+		"firing heat" 14
+		"anti-missile" 5
+	description "This variant of the Mini Blaster is loaded with additional equipment shamelessly stolen from the ubiquitous Anti-Missile Turret. So it can shoot down missiles. Being a static gun port, this is of questionable utility, but you do you, Captain."
+
+effect "kgs mini blaster impact"
+	sprite "effect/blaster impact"
+		"scale" 0.6
+		"no repeat"
+		"frame rate" 30
+	"lifetime" 7
+	"random angle" 40
+	"velocity scale" -.05
