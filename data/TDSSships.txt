@@ -563,6 +563,7 @@ ship "Combat Microdrone"
 	description "	Drones do not come equipped with a hyperdrive. You cannot carry a drone unless you have a ship in your fleet with a drone bay."
 
 ship "Arby's"
+	plural "Arby'ses"
 	sprite "ship/aerie"
 	thumbnail "thumbnail/aerie"
 	attributes
@@ -809,8 +810,8 @@ ship "Ultra-Sick Turbo Flivver DEBUG"
 	attributes
 		category "Interceptor"
 		"cost" 180
-		"shields" 14000
-		"hull" 2000
+		"shields" 140000
+		"hull" 50000
 		"required crew" 1
 		"bunks" 3
 		"mass" 90
@@ -827,28 +828,28 @@ ship "Ultra-Sick Turbo Flivver DEBUG"
 			"hull damage" 80
 			"hit force" 240
 	outfits
-		
-		"Reaction Beam"
-		"Ka'het MHD Generator" 2
-		"Blue Sun Reactor"
-		"Supercapacitor"
-		"Large Heat Shunt"
+		"Large Reaction Beam"
+		"Super Shard Fabricator" 2
+		"Blue Sun Reactor" 2
+		"Large Battery Module" 4
+		"Large Heat Shunt" 2
+		"Systems Core (Large)"
 		"Fuel Processor"
-		"Crucible-Class Steering"
-		"Crucible-Class Thruster"
+		"Forge-Class Steering" 2
+		"Forge-Class Thruster"
 		"Bellows-Class Afterburner"
 		"Hyperdrive"
 		"Jump Drive"
-		
+
 	engine -16.5 26
 	engine 16.5 26
-	gun -6 -35.5
-	gun 6 -35.5
-	gun 0 -35.5
+	gun -6 -35.5 "Super Shard Fabricator"
+	gun 6 -35.5 "Super Shard Fabricator"
+	gun 0 -35.5 "Large Reaction Beam"
 	leak "leak" 60 50
 	explode "tiny explosion" 10
 	explode "small explosion" 10
-	description "If not Flivver, why Flivver-shaped?"
+	description "For debug and author purposes."
 
 ship "tecc"
 	sprite "ship/prot"

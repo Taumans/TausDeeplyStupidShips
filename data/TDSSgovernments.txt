@@ -1,0 +1,11 @@
+government "Compassionate Anarchist"
+	"display name" "Compassionate Anarchist"
+	swizzle 20
+	color .70 .91 .12
+	"player reputation" 1
+	"attitude toward"
+		"Bounty" -.5
+		"Bounty (Disguised)" -.5
+		"Merchant" 1.0
+		"Pirate" -1.0
+		"Syndicate" -1.0

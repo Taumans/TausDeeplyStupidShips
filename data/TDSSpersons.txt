@@ -1,0 +1,26 @@
+ship "Ultra-Sick Turbo Flivver DEBUG" "Anti-Syn"
+	"never disabled"
+
+person "Tau"
+	government "Compassionate Anarchist"
+	personality
+		forbearing hunting disables merciful secretive entering lingering
+	system
+		attributes "core"
+	phrase
+		word
+			"The first step to eliminating piracy is disincentivizing it. The first step to disincentivizing piracy is DISMANTLING THE SYNDICATE."
+			"Positions of wealth and power attract people who desire wealth and power. People who desire wealth and power are bad people who should not be in positions of wealth and power."
+			"Wealth consolidation is bad for individuals and bad for states."
+			"House the homeless. Feed the hungry. Clothe the naked. Dismantle all usurers!"
+			"Crime is mostly a resource allocation issue."
+			"Criminality is defined by those with wealth and power."
+			"Yes, this IS my soapbox, thank you for noticing."
+			"They kill pirates for stealing cargo. They give bonuses to Syndicate executives for breaking strikes."
+			"UNIONIZE."
+			"We are only as rich as our poorest."
+			"Syndicate, I am revoking your having spaceships privileges."
+			"Everybody eats, and everybody has a home."
+			"No masters above, no servants below, chuck a missile at the Syndicate now and then."
+			"I once went to Anbrim in a Star Barge."
+	ship "Anti-Syn" "Tau"

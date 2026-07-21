@@ -35,6 +35,7 @@ outfit "Sidestep"
 		sound "ion impact"
 		"fire effect" "rail sparks"
 		"hit effect" "bullet impact"
+		submunition "Sidestep Undo"
 		"inaccuracy" 3
 		"velocity" 10
 		"lifetime" 1
@@ -45,6 +46,11 @@ outfit "Sidestep"
 		"firing force" 2500
 		"cluster"
 	description "The Sidestep is a short-barreled cannon designed not to cause damage, but rather to throw enough mass explosively enough to shove the ship it is mounted on sideways. Violently."
+
+outfit "Sidestep Undo"
+	weapon
+		"lifetime" 1
+		"firing force" -2500
 
 outfit "Sidestep Cannonball"
 	"display name" "Sidestep Cannonball"
@@ -144,7 +150,7 @@ outfit "Empty Boxwing Cannon"
 		sound "rocket"
 		ammo "Empty Boxwing"
 		icon "ship/boxwing"
-		"hit effect" "spark"
+		"hit effect" "rail sparks"
 		"die effect" "small explosion"
 		"inaccuracy" 3
 		"velocity" 15
@@ -281,12 +287,23 @@ outfit "Reaction Explosion"
 		sprite "projectile/thorax cannon"
 			"frame rate" 60
 			"random start frame"
+		"hit effect" "reaction explosion explosion"
 		"inaccuracy" 0.1
 		"velocity" -50
 		"lifetime" 1
 		"shield damage" 7
 		"hull damage" 2.7
 		"hit force" 120
+		"blast radius" 35
+		"fused"
+
+effect "reaction explosion explosion"
+	sprite "projectile/thorax cannon"
+		"frame rate" 30
+		"random start frame"
+	sound "explosion tiny"
+	"lifetime" 1
+	"velocity scale" 0
 
 outfit "Large Reaction Beam"
 	category "Guns"
@@ -317,15 +334,26 @@ outfit "Large Reaction Beam"
 
 outfit "Large Reaction Explosion"
 	weapon
-		sprite "effect/finisher impact"
+		sprite "effect/explosion/nuke"
 			"frame rate" 60
 			"random start frame"
+		"hit effect" "large reaction explosion explosion"
 		"inaccuracy" 0.1
 		"velocity" -400
 		"lifetime" 1
-		"shield damage" 24.5
-		"hull damage" 9.45
+		"shield damage" 29.5
+		"hull damage" 11.45
 		"hit force" 200
+		"blast radius" 150
+		"fused"
+
+effect "large reaction explosion explosion"
+	sprite "effect/explosion/nuke"
+		"frame rate" 30
+		"random start frame"
+	sound "explosion tiny"
+	"lifetime" 1
+	"velocity scale" 0
 
 outfit "Plasma Gatling"
 	category "Guns"
@@ -513,83 +541,6 @@ outfit "Fist Missile"
 		"hit force" 225
 		"missile strength" 3
 
-outfit "Homing Arrow"
-	category "Secondary Weapons"
-	series "Secondary Weapons"
-	index 09010
-	cost 4500000
-	thumbnail "outfit/thunderhead launcher"
-	"mass" 46
-	"outfit space" -46
-	"weapon capacity" -46
-	"gun ports" -1
-	"arrow capacity" 1
-	weapon
-		sprite "projectile/thunderhead"
-			"no repeat"
-			"frame rate" .1
-		sound "thunderhead"
-		ammo "Homing Arrow Ammunition"
-		icon "icon/thunderhead"
-		"submunition" "Homing Arrow Respawn" 1
-		"fire effect" "meteor fire"
-		"die effect" "missile death"
-		"hit effect" "medium explosion"
-		"inaccuracy" 10
-		"velocity" 8
-		"lifetime" 600
-		"reload" 75
-		"firing energy" 500
-		"firing heat" 800
-		"acceleration" 1.1
-		"drag" .1
-		"turn" 4
-		"homing"
-			"leading"
-			"throttle control"
-		"infrared tracking" 1.
-		"radar tracking" .8
-		"missile strength" 50
-	description "Try whistling."
-
-outfit "Homing Arrow Ammunition"
-	category "Ammunition"
-	series "Ammunition"
-	index 09010
-	cost 18
-	thumbnail "outfit/thunderhead"
-	mass .27
-	"arrow capacity" -1
-	description "Pierce. Everything."
-
-outfit "Homing Arrow Respawn"
-	weapon
-		sprite "projectile/thunderhead fragment"
-			"no repeat"
-			"frame rate" .1
-		"die effect" "missile death"
-		"hit effect" "small explosion"
-		"spawn on" collision
-		"spawn on" anti-missile
-		"spawn on" explosion
-		"spawn on" natural
-		"inaccuracy" 90
-		"velocity" 2
-		"lifetime" 30
-		"submunition" "Homing Arrow Respawn" 1
-		"acceleration" 1.4
-		"drag" .1
-		"turn" 4
-		"homing"
-			"leading"
-			"throttle control"
-		"infrared tracking" 1.
-		"radar tracking" .8
-		"shield damage" 110
-		"hull damage" 80
-		"hit force" 22
-		"missile strength" 20
-
 outfit "Hat"
 	category "Turrets"
 	series "Anti-Missile"
@@ -599,4 +550,174 @@ outfit "Hat"
 	"turret mounts" -1
 	weapon
 		"hardpoint sprite" "outfit/hat"
+		"turret turn" 0.01
 	description "hat"
+
+outfit "Hai Tracker And Grabber Pod"
+	category "Secondary Weapons"
+	series "Secondary Weapons"
+	index 02010
+	cost 150000
+	thumbnail "outfit/hai tracker pod"
+	"mass" 4.8
+	"outfit space" -16
+	"weapon capacity" -16
+	"gun ports" -1
+	"tracker capacity" 56
+	weapon
+		sprite "projectile/tracker"
+			"frame rate" 10
+			"random start frame"
+		sound "tracker"
+		ammo "Hai Tracker"
+		icon "icon/tracker"
+		"fire effect" "tracker fire"
+		"hit effect" "tracker impact"
+		"hit effect" "tracker cloud" 3
+		"die effect" "tracker impact"
+		"inaccuracy" 20
+		"velocity" 14
+		"lifetime" 475
+		"reload" 60
+		"firing energy" 45
+		"firing heat" 5
+		"acceleration" .7
+		"drag" .05
+		"turn" 1.2
+		"homing"
+			"leading"
+			"throttle control"
+		"optical tracking" .8
+		"infrared tracking" .2
+		"shield damage" 200
+		"hull damage" 160
+		"hit force" -525
+		"missile strength" 16
+	description "Part of the 'Tracker And' series of experimental variations. This one replaces the warhead with one derived from technology reverse-engineered from captured Korath Grab-Strike weapons. Rather than pushing the target away, it draws the target closer. Somehow."
+	description "	Ammunition for this weapon can be restocked at any outfitter."
+		to display
+			has "gamerule: universal ammo restocking"
+
+outfit "Hai Tracker And Decoy Pod"
+	category "Secondary Weapons"
+	series "Secondary Weapons"
+	index 02010
+	cost 150000
+	thumbnail "outfit/hai tracker pod"
+	"mass" 4.8
+	"outfit space" -16
+	"weapon capacity" -16
+	"gun ports" -1
+	"tracker capacity" 56
+	weapon
+		sprite "projectile/tracker"
+			"frame rate" 10
+			"random start frame"
+		sound "tracker"
+		ammo "Hai Tracker"
+		icon "icon/tracker"
+		"fire effect" "tracker fire"
+		"hit effect" "tracker impact"
+		"hit effect" "tracker cloud" 3
+		"die effect" "tracker impact"
+		"trigger radius" 250
+		"submunition" "Hai Tracker Pod"
+			"spawn on" explosion
+		"submunition" "Hai Tracker Chaff" 9
+			"spawn on" explosion
+		"inaccuracy" 20
+		"velocity" 14
+		"lifetime" 475
+		"reload" 60
+		"firing energy" 45
+		"firing heat" 5
+		"acceleration" .7
+		"drag" .05
+		"turn" 1.2
+		"homing"
+			"leading"
+			"throttle control"
+		"optical tracking" .8
+		"infrared tracking" .2
+		"shield damage" 200
+		"hull damage" 160
+		"hit force" 525
+		"missile strength" 16
+	description "Part of the 'Tracker And' series of experimental variations. This one releases a cloud of chaff when nearing its target to distract anti-missile systems."
+	description "	Ammunition for this weapon can be restocked at any outfitter."
+		to display
+			has "gamerule: universal ammo restocking"
+
+outfit "Hai Tracker Chaff"
+	weapon
+		sprite "projectile/irate"
+		"inaccuracy" 60
+		"velocity" 14
+		"acceleration" -1
+		"lifetime" 20
+		"missile strength" 1
+		"homing"
+			"leading"
+			"throttle control"
+		"optical tracking" .4
+
+outfit "Super Shard Fabricator"
+	category "Secondary Weapons"
+	series "Secondary Weapons"
+	index 13010
+	cost 330000
+	thumbnail "outfit/shard"
+	"mass" 30
+	"outfit space" -60
+	"weapon capacity" -51
+	"gun ports" -1
+	"operating costs" 1500
+	weapon
+		sprite "projectile/shardactive"
+			"frame rate" 30
+			"random start frame"
+		sound "grab-strike"
+		icon "icon/shard"
+		"fire effect" "basic launch"
+		"hit effect" "super shard impact"
+		"submunition" "super shard inactive"
+		"inaccuracy" 60
+		"velocity" 15
+		"lifetime" 100
+		"random lifetime" 20
+		"reload" 2
+		"firing energy" 40
+		"firing ion" 3
+		"firing heat" 60
+		"acceleration" 2
+		"drag" .1
+		"turn" 8
+		"homing"
+			"leading"
+			"throttle control"
+		"radar tracking" .9
+		"optical tracking" .9
+		"infrared tracking" .9
+		"missile strength" 20
+	description "oh no"
+
+outfit "super shard inactive"
+	weapon
+		sprite "projectile/shardinactive"
+			"frame rate" 5
+			"random start frame"
+		"hit effect" "shard impact"
+		"die effect" "missile death"
+		"lifetime" 90
+		"random lifetime" 40
+		"hit force" 30
+		"shield damage" 82
+		"hull damage" 95
+
+effect "super shard impact"
+	sprite "effect/particle impact"
+		"no repeat"
+		"frame rate" 30
+	sound "explosion large"
+	"lifetime" 30
+	"velocity scale" 0
