@@ -721,3 +721,123 @@ effect "super shard impact"
 	sound "explosion large"
 	"lifetime" 30
 	"velocity scale" 0
+
+outfit "Proton Geyser"
+	category "Guns"
+	series "Guns"
+	index 01100
+	cost 150000
+	thumbnail "outfit/proton gun"
+	"mass" 196
+	"outfit space" -196
+	"weapon capacity" -196
+	"gun ports" -1
+	weapon
+		sprite "projectile/proton"
+		sound "proton"
+		"hit effect" "proton impact" 3
+		"inaccuracy" 8
+		"submunition" "Geyser Fragment 1" 3
+		"velocity" 24
+		"lifetime" 2
+		"reload" 8
+		"firing energy" 15
+		"firing force" 3
+		"firing heat" 60
+	description "Some idiot pirate all hopped up on hyperdrive fumes slapped together seven Proton Guns. OKAY BUT WHAT IF THE SUBMUNITION SPLIT SEVEN TIMES?? Don't forget to tweak later submunition damage way way down so it's not doing like 20k per hit"
+
+outfit "Geyser Fragment 1"
+	weapon
+		sprite "projectile/proton fragment"
+			"no repeat"
+			"frame rate" 2
+		"hit effect" "proton impact"
+		"submunition" "Geyser Fragment 2" 3
+		"exclude submunition damage"
+		"inaccuracy" 3
+		"lifetime" 4
+		"hit force" 9
+		"shield damage" 10.1
+		"hull damage" 8.4
+
+outfit "Geyser Fragment 2"
+	weapon
+		sprite "projectile/proton fragment"
+			"no repeat"
+			"frame rate" 2
+		"hit effect" "proton impact"
+		"submunition" "Geyser Fragment 3" 3
+		"exclude submunition damage"
+		"inaccuracy" 3
+		"lifetime" 4
+		"hit force" 9
+		"shield damage" 10.1
+		"hull damage" 8.4
+
+outfit "Geyser Fragment 3"
+	weapon
+		sprite "projectile/proton fragment"
+			"no repeat"
+			"frame rate" 2
+		"hit effect" "proton impact"
+		"submunition" "Geyser Fragment 4" 3
+		"exclude submunition damage"
+		"inaccuracy" 3
+		"lifetime" 4
+		"hit force" 9
+		"shield damage" 10.1
+		"hull damage" 8.4
+
+outfit "Geyser Fragment 4"
+	weapon
+		sprite "projectile/proton fragment"
+			"no repeat"
+			"frame rate" 2
+		"hit effect" "proton impact"
+		"submunition" "Geyser Fragment 5" 3
+		"exclude submunition damage"
+		"inaccuracy" 3
+		"lifetime" 4
+		"hit force" 9
+		"shield damage" 10.1
+		"hull damage" 8.4
+
+outfit "Geyser Fragment 5"
+	weapon
+		sprite "projectile/proton fragment"
+			"no repeat"
+			"frame rate" 2
+		"hit effect" "proton impact"
+		"submunition" "Geyser Fragment 6" 3
+		"exclude submunition damage"
+		"inaccuracy" 3
+		"lifetime" 4
+		"hit force" 9
+		"shield damage" 10.1
+		"hull damage" 8.4
+
+outfit "Geyser Fragment 6"
+	weapon
+		sprite "projectile/proton fragment"
+			"no repeat"
+			"frame rate" 2
+		"hit effect" "proton impact"
+		"submunition" "Geyser Fragment 7" 3
+		"exclude submunition damage"
+		"inaccuracy" 3
+		"lifetime" 4
+		"hit force" 9
+		"shield damage" 10.1
+		"hull damage" 8.4
+
+outfit "Geyser Fragment 7"
+	weapon
+		sprite "projectile/proton fragment"
+			"no repeat"
+			"frame rate" 2
+		"hit effect" "proton impact"
+		"inaccuracy" 3
+		"lifetime" 4
+		"hit force" 9
+		"shield damage" 10.1
+		"hull damage" 8.4
