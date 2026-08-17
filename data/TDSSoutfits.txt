@@ -726,25 +726,28 @@ outfit "Proton Geyser"
 	category "Guns"
 	series "Guns"
 	index 01100
-	cost 150000
+	cost 1500002
 	thumbnail "outfit/proton gun"
 	"mass" 196
 	"outfit space" -196
 	"weapon capacity" -196
 	"gun ports" -1
+	"spinal mount" -1
 	weapon
 		sprite "projectile/proton"
 		sound "proton"
 		"hit effect" "proton impact" 3
-		"inaccuracy" 8
+		"inaccuracy" 7
 		"submunition" "Geyser Fragment 1" 3
 		"velocity" 24
+		"burst count" 14
+		"burst reload" 8
 		"lifetime" 2
-		"reload" 8
-		"firing energy" 15
-		"firing force" 3
-		"firing heat" 60
-	description "Some idiot pirate all hopped up on hyperdrive fumes slapped together seven Proton Guns. OKAY BUT WHAT IF THE SUBMUNITION SPLIT SEVEN TIMES?? Don't forget to tweak later submunition damage way way down so it's not doing like 20k per hit"
+		"reload" 60
+		"firing energy" 1156
+		"firing force" 630
+		"firing heat" 6660
+	description "A fever dream of a weapon. Somehow, the proton package splits seven times, yet its density before splitting does not much change. Devastating at range, no more powerful than a single Proton Gun up close."
 
 outfit "Geyser Fragment 1"
 	weapon
@@ -771,8 +774,8 @@ outfit "Geyser Fragment 2"
 		"inaccuracy" 3
 		"lifetime" 4
 		"hit force" 9
-		"shield damage" 10.1
-		"hull damage" 8.4
+		"shield damage" 6
+		"hull damage" 4.8
 
 outfit "Geyser Fragment 3"
 	weapon
@@ -785,8 +788,8 @@ outfit "Geyser Fragment 3"
 		"inaccuracy" 3
 		"lifetime" 4
 		"hit force" 9
-		"shield damage" 10.1
-		"hull damage" 8.4
+		"shield damage" 5
+		"hull damage" 4
 
 outfit "Geyser Fragment 4"
 	weapon
@@ -799,8 +802,8 @@ outfit "Geyser Fragment 4"
 		"inaccuracy" 3
 		"lifetime" 4
 		"hit force" 9
-		"shield damage" 10.1
-		"hull damage" 8.4
+		"shield damage" 4
+		"hull damage" 3.2
 
 outfit "Geyser Fragment 5"
 	weapon
@@ -813,8 +816,8 @@ outfit "Geyser Fragment 5"
 		"inaccuracy" 3
 		"lifetime" 4
 		"hit force" 9
-		"shield damage" 10.1
-		"hull damage" 8.4
+		"shield damage" 3
+		"hull damage" 2.4
 
 outfit "Geyser Fragment 6"
 	weapon
@@ -827,8 +830,8 @@ outfit "Geyser Fragment 6"
 		"inaccuracy" 3
 		"lifetime" 4
 		"hit force" 9
-		"shield damage" 10.1
-		"hull damage" 8.4
+		"shield damage" 2
+		"hull damage" 1.6
 
 outfit "Geyser Fragment 7"
 	weapon
@@ -839,5 +842,52 @@ outfit "Geyser Fragment 7"
 		"inaccuracy" 3
 		"lifetime" 4
 		"hit force" 9
-		"shield damage" 10.1
-		"hull damage" 8.4
+		"shield damage" 1
+		"hull damage" 0.8
+
+outfit "Vertical Hai Tracker And Grabber Cluster"
+	category "Secondary Weapons"
+	series "Secondary Weapons"
+	index 02010
+	cost 150000
+	thumbnail "outfit/hai tracker pod"
+	"mass" 14
+	"outfit space" -30
+	"weapon capacity" -30
+	"turret mounts" -1
+	"tracker capacity" 56
+	weapon
+		sprite "projectile/tracker"
+			"frame rate" 10
+			"random start frame"
+		sound "tracker"
+		ammo "Hai Tracker"
+		icon "icon/tracker"
+		"fire effect" "tracker fire"
+		"hit effect" "tracker impact"
+		"hit effect" "tracker cloud" 3
+		"die effect" "tracker impact"
+		"inaccuracy" 360
+		"velocity" 4
+		"lifetime" 475
+		"burst count" 2
+		"burst reload" 10
+		"reload" 45
+		"firing energy" 45
+		"firing heat" 5
+		"acceleration" 1
+		"drag" .05
+		"turn" 1.7
+		"homing"
+			"leading"
+			"throttle control"
+		"optical tracking" .8
+		"infrared tracking" .2
+		"shield damage" 200
+		"hull damage" 160
+		"hit force" -525
+		"missile strength" 16
+	description "Part of the 'Tracker And' series of experimental variations. This one replaces the warhead with one derived from technology reverse-engineered from captured Korath Grab-Strike weapons. Rather than pushing the target away, it draws the target closer. Somehow. This Cluster variant is vertically mounted. It fires in short bursts to compensate for the uncontrolled initial direction."
+	description "	Ammunition for this weapon can be restocked at any outfitter."
+		to display
+			has "gamerule: universal ammo restocking"

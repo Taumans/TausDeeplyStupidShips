@@ -1,6 +1,8 @@
 shipyard "Uncle Trusty's Reliable Spaceships"
 	"Rav"
 	"Pigeon"
+	"Katydid"
 shipyard "Basic Ships"
 	"Rav"
 	"Pigeon"
+	"Katydid"

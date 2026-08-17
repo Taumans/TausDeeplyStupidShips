@@ -109,3 +109,58 @@ ship "Pigeon"
 	explode "small explosion" 40
 	"final explode" "final explosion large"
 	description "Okay look. Let's get this out in the open - this was 100% a scaling mistake in CAD. But here it is. Uncle Trusty says it is solid. You can trust him."
+
+ship "Katydid"
+	sprite "ship/hai lightning bug"
+	thumbnail "thumbnail/hai lightning bug"
+	attributes
+		category "Light Warship"
+		"cost" 3200000
+		"shields" 6700
+		"hull" 1700
+		"required crew" 4
+		"bunks" 10
+		"mass" 345
+		"drag" 4.8
+		"heat dissipation" .68
+		"fuel capacity" 600
+		"cargo space" 73
+		"outfit space" 278
+		"weapon capacity" 87
+		"engine capacity" 93
+		weapon
+			"blast radius" 84
+			"shield damage" 840
+			"hull damage" 420
+			"hit force" 1260
+	outfits
+		"Railgun" 3
+		"Vertical Hai Tracker And Grabber Cluster" 2
+		"Railgun Slug" 3000
+		"Hai Tracker" 100
+		"Hai Cuttlefish Jammer"
+		"Geode Reactor"
+		"Hai Gorge Batteries"
+		"Hai Corundum Regenerator"
+		"Hai Williwaw Cooling"
+		"Quantum Keystone"
+		"Pulse Rifle" 2
+		`"Benga" Atomic Thruster`
+		`"Biroo" Atomic Steering`
+		"Hyperdrive"
+
+	gun 0 -40
+	gun -14 -50
+	gun 14 -50
+	turret -47 18
+	turret 47 18
+	engine -40 22
+	engine 40 22
+	leak "leak" 40 50
+	leak "flame" 40 30
+	explode "tiny explosion" 18
+	explode "small explosion" 36
+	explode "medium explosion" 24
+	explode "large explosion" 8
+	"final explode" "final explosion small"
+	description "Following the success of the Pond Strider ands its Fleas, the Hai hit on new ways to engage in low-risk, time-consuming modes of combat to keep their Unfettered brethren engaged while keeping lethality low. The Katydid is based on the Lightning Bug, trading its Ion Cannon for an array of Skipper Railguns and swaps the Bullfrog Anti-Missiles out to mount a pair of newly-developed Vertical Tracker And Grabber Cluster to aggressively kite individual targets away from the main battle."

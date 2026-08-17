@@ -912,3 +912,351 @@ ship "tecc"
 	explode "large explosion" 8
 	"final explode" "final explosion large"
 	description `tecc protecc`
+
+ship "Arby's Double"
+	plural "Arby'ses"
+	sprite "ship/aerie"
+	thumbnail "thumbnail/aerie"
+	attributes
+		category "Medium Warship"
+		"cost" 4300000
+		"shields" 5700
+		"hull" 1900
+		"required crew" 17
+		"bunks" 28
+		"mass" 560
+		"drag" 8.15
+		"heat dissipation" .67
+		"fuel capacity" 500
+		"cargo space" 70
+		"outfit space" 420
+		"weapon capacity" 100
+		"engine capacity" 113
+		weapon
+			"blast radius" 80
+			"shield damage" 800
+			"hull damage" 400
+			"hit force" 1200
+	outfits
+		"Proton Turret"
+		
+		"NT-200 Nucleovoltaic"
+		"KP-6 Photovoltaic Panel" 2
+		"LP072a Battery Pack"
+		"D41-HY Shield Generator"
+		"Large Radar Jammer"
+		"Laser Rifle" 3
+		
+		"X3700 Ion Thruster"
+		"X3200 Ion Steering"
+		"Hyperdrive"
+		
+	engine 15 97
+	engine -15 97
+	turret 0 1.5
+	bay "Microdrone" -43.5 2
+		"launch effect" "human internal"
+	bay "Microdrone" 43.5 2
+		"launch effect" "human internal"
+	bay "Microdrone" -43.5 2
+		"launch effect" "human internal"
+	bay "Microdrone" 43.5 2
+		"launch effect" "human internal"
+	bay "Microdrone" -45.5 2
+		"launch effect" "human internal"
+	bay "Microdrone" 45.5 2
+		"launch effect" "human internal"
+	bay "Microdrone" -45.5 2
+		"launch effect" "human internal"
+	bay "Microdrone" 45.5 2
+		"launch effect" "human internal"
+	bay "Microdrone" -45.5 2
+		"launch effect" "human internal"
+	bay "Microdrone" 45.5 2
+		"launch effect" "human internal"
+	bay "Microdrone" -43.5 2
+		"launch effect" "human internal"
+	bay "Microdrone" 43.5 2
+		"launch effect" "human internal"
+	bay "Microdrone" -43.5 2
+		"launch effect" "human internal"
+	bay "Microdrone" 43.5 2
+		"launch effect" "human internal"
+	bay "Microdrone" -45.5 2
+		"launch effect" "human internal"
+	bay "Microdrone" 45.5 2
+		"launch effect" "human internal"
+	bay "Microdrone" -45.5 2
+		"launch effect" "human internal"
+	bay "Microdrone" 45.5 2
+		"launch effect" "human internal"
+	bay "Microdrone" -45.5 2
+		"launch effect" "human internal"
+	bay "Microdrone" 45.5 2
+		"launch effect" "human internal"
+	leak "leak" 50 50
+	leak "flame" 50 80
+	leak "big leak" 90 30
+	explode "tiny explosion" 10
+	explode "small explosion" 25
+	explode "medium explosion" 25
+	explode "large explosion" 10
+	"final explode" "final explosion medium"
+	description "The Arby's Double is a medium carrier, shamelessly plagarized from the Lionheart Aerie and then further mangled with additional bay space. Its fighter bays have been modified to house twenty microdrones, and its offensive complement further reduced to a single turret due to the engineering team claiming it is 'just too dang heavy.'"
+
+ship "Arby's Half Pound"
+	plural "Arby'ses"
+	sprite "ship/aerie"
+	thumbnail "thumbnail/aerie"
+	attributes
+		category "Heavy Warship"
+		"cost" 5350000
+		"shields" 5700
+		"hull" 2200
+		"required crew" 20
+		"bunks" 28
+		"mass" 777
+		"drag" 11.15
+		"heat dissipation" .67
+		"fuel capacity" 500
+		"cargo space" 21
+		"outfit space" 499
+		"weapon capacity" 47
+		"engine capacity" 93
+		weapon
+			"blast radius" 111
+			"shield damage" 1200
+			"hull damage" 600
+			"hit force" 1500
+	outfits
+		"NT-200 Nucleovoltaic"
+		"KP-6 Photovoltaic Panel" 2
+		"LP072a Battery Pack"
+		"D41-HY Shield Generator"
+		"Large Radar Jammer"
+		"Laser Rifle" 12
+		
+		"A370 Atomic Thruster"
+		"A375 Atomic Steering"
+		"Hyperdrive"
+		
+	engine 15 97
+	engine -15 97
+	turret 0 1.5
+	bay "Microdrone" -43.5 2
+		"launch effect" "human internal"
+	bay "Microdrone" 43.5 2
+		"launch effect" "human internal"
+	bay "Microdrone" -43.5 2
+		"launch effect" "human internal"
+	bay "Microdrone" 43.5 2
+		"launch effect" "human internal"
+	bay "Microdrone" -45.5 2
+		"launch effect" "human internal"
+	bay "Microdrone" 45.5 2
+		"launch effect" "human internal"
+	bay "Microdrone" -45.5 2
+		"launch effect" "human internal"
+	bay "Microdrone" 45.5 2
+		"launch effect" "human internal"
+	bay "Microdrone" -45.5 2
+		"launch effect" "human internal"
+	bay "Microdrone" 45.5 2
+		"launch effect" "human internal"
+	bay "Microdrone" -43.5 2
+		"launch effect" "human internal"
+	bay "Microdrone" 43.5 2
+		"launch effect" "human internal"
+	bay "Microdrone" -43.5 2
+		"launch effect" "human internal"
+	bay "Microdrone" 43.5 2
+		"launch effect" "human internal"
+	bay "Microdrone" -45.5 2
+		"launch effect" "human internal"
+	bay "Microdrone" 45.5 2
+		"launch effect" "human internal"
+	bay "Microdrone" -45.5 2
+		"launch effect" "human internal"
+	bay "Microdrone" 45.5 2
+		"launch effect" "human internal"
+	bay "Microdrone" -45.5 2
+		"launch effect" "human internal"
+	bay "Microdrone" 45.5 2
+		"launch effect" "human internal"
+	bay "Microdrone" -43.5 2
+		"launch effect" "human internal"
+	bay "Microdrone" 43.5 2
+		"launch effect" "human internal"
+	bay "Microdrone" -43.5 2
+		"launch effect" "human internal"
+	bay "Microdrone" 43.5 2
+		"launch effect" "human internal"
+	bay "Microdrone" -45.5 2
+		"launch effect" "human internal"
+	bay "Microdrone" 45.5 2
+		"launch effect" "human internal"
+	bay "Microdrone" -45.5 2
+		"launch effect" "human internal"
+	bay "Microdrone" 45.5 2
+		"launch effect" "human internal"
+	bay "Microdrone" -45.5 2
+		"launch effect" "human internal"
+	bay "Microdrone" 45.5 2
+		"launch effect" "human internal"
+	bay "Microdrone" -43.5 2
+		"launch effect" "human internal"
+	bay "Microdrone" 43.5 2
+		"launch effect" "human internal"
+	bay "Microdrone" -43.5 2
+		"launch effect" "human internal"
+	bay "Microdrone" 43.5 2
+		"launch effect" "human internal"
+	bay "Microdrone" -45.5 2
+		"launch effect" "human internal"
+	bay "Microdrone" 45.5 2
+		"launch effect" "human internal"
+	bay "Microdrone" -45.5 2
+		"launch effect" "human internal"
+	bay "Microdrone" 45.5 2
+		"launch effect" "human internal"
+	bay "Microdrone" -45.5 2
+		"launch effect" "human internal"
+	bay "Microdrone" 45.5 2
+		"launch effect" "human internal"
+	leak "leak" 50 50
+	leak "flame" 50 80
+	leak "big leak" 90 30
+	explode "tiny explosion" 10
+	explode "small explosion" 25
+	explode "medium explosion" 25
+	explode "large explosion" 10
+	"final explode" "final explosion large"
+	description "The Arby's Double is a heavy carrier, shamelessly plagarized from the Lionheart Aerie and then further mangled with additional bay space to a silly degree. Its fighter bays have been modified to house four tens of microdrones. Extreme compromises had to be made to hold the thing together. It has been left totally unarmed. This was not a good idea."
+
+ship "Bactrain"
+	sprite "ship/bactrain"
+	thumbnail "ship/bactrain_thumb"
+	attributes
+		category "Utility"
+		"cost" 17600000
+		"shields" 14400
+		"hull" 6600
+		"required crew" 123
+		"bunks" 199
+		"mass" 3990
+		"drag" 63.1
+		"heat dissipation" .17
+		"fuel capacity" 599
+		"cargo space" 233
+		"outfit space" 799
+		"weapon capacity" 396
+		"engine capacity" 236
+		weapon
+			"blast radius" 260
+			"shield damage" 3000
+			"hull damage" 1900
+			"hit force" 4400
+	outfits
+		"Energy Blaster" 29
+		"Meteor Missile Launcher" 4
+		"Meteor Missile" 120
+		"Sidewinder Missile Launcher" 4
+		"Sidewinder Missile" 180
+
+		"Blaster Turret" 3
+		"Anti-Missile Turret" 3
+		
+		"Fusion Reactor"
+		"LP072a Battery Pack"
+		"D94-YV Shield Generator"
+		
+		"Tyrant Plasma Thruster"
+		"Tyrant Plasma Steering"
+		"Hyperdrive"
+		
+	gun -50.9 -192.7
+	gun -47.8 -201.2
+	gun -39.3 -206.6
+	gun -32.4 -205.8
+	gun -24.7 -200.4
+	gun -20 -192.7
+	gun 20.8 -194.3
+	gun 24.7 -201.2
+	gun 32.4 -209.7
+	gun 40.9 -207.4
+	gun 48.6 -202
+	gun 53.2 -197.4
+	gun -86.3 -124.9
+	gun -98.7 -124.1
+	gun 79.4 -129.5
+	gun 90.2 -127.2
+	gun -125.7 -89.4
+		angle -38
+	gun -131.8 -80.2
+		angle -36
+	gun -97.9 -109.5
+		angle -36
+	gun 97.9 -111.8
+		angle 29
+	gun 120.3 -91.7
+		angle 31
+	gun 128.7 -84
+		angle 28
+	gun 128 -67.1
+	gun 128 -67.1
+		angle 59
+	gun 138.8 -39.3
+		angle 62
+	gun 143.4 -29.3
+		angle 58
+	gun -131.8 -71.7
+		angle -65
+	gun -144.9 -39.3
+		angle -60
+	gun -148 -31.6
+		angle -68
+	gun -109.5 47.8
+		angle -122
+	gun -104.1 57.8
+		angle -119
+	gun -77.9 90.2
+		angle -121
+	gun -71.7 100.2
+		angle -125
+	gun 67.1 94.8
+		angle -222
+	gun 73.2 86.3
+		angle -225
+	gun 98.7 60.9
+		angle -228
+	gun 103.3 53.2
+		angle -248
+	turret -35.5 -59.4
+	turret 0 -87.9
+	turret 33.9 -60.1
+	turret -1.5 34.7
+	turret -41.6 57
+	turret 35.5 63.2
+	engine -53.2 192.7
+	engine -33.9 193.5
+	engine 27 193.5
+	engine 47 192.7
+	engine 9.3 159.6
+	engine -10.8 158.8
+	engine -84 144.9
+		angle 32
+	engine -69.4 153.4
+		angle 29
+	engine 66.3 151.1
+		angle -30
+	engine 83.3 142.6
+		angle -35
+	leak "leak" 30 50
+	leak "flame" 30 80
+	leak "big leak" 50 30
+	explode "small explosion" 25
+	explode "medium explosion" 35
+	explode "large explosion" 45
+	explode "huge explosion" 30
+	"final explode" "final explosion large"
+	description "The 'Bactrain' is the product of low-oxygen pirate minds, and a lot of welding."
