@@ -8,5 +8,6 @@ tags
 about "A silly plugin full of goofy ships and weapons I made for fun."
 about "Rav and Fat Pigeon visuals provided by kaiboyjiang, who is very cool."
 about "Interceptor Prot relies on KGS plugin content by kaiboyjiang"
+about "Combat Microdrone visuals provided by Cosmosyn"
 about "https://github.com/Taumans/TausDeeplyStupidShips"
 about "plugins"

@@ -527,8 +527,8 @@ ship "prot"
 	description `prot smol`
 
 ship "Combat Microdrone"
-	sprite "ship/combat drone"
-	thumbnail "thumbnail/combat drone"
+	sprite "ship/flivverdrone"
+	thumbnail "ship/flivverdrone"
 	"never disabled"
 	attributes
 		category "Microdrone"
@@ -560,7 +560,7 @@ ship "Combat Microdrone"
 	gun 0 -29
 	explode "tiny explosion" 15
 	description "Combat Microdrones are disposable units meant to be deployed and forgotten. They do not have reactors or shields and only the minimum viable hull plating. This model is equipped with a Gatling Snubnose to deliver high amounts of hull damage in its short lifespan."
-	description "	Drones do not come equipped with a hyperdrive. You cannot carry a drone unless you have a ship in your fleet with a drone bay."
+	description "	Drones do not come equipped with a hyperdrive. You cannot carry a microdrone unless you have a ship in your fleet with a microdrone bay."
 
 ship "Arby's"
 	plural "Arby'ses"
@@ -1143,7 +1143,7 @@ ship "Bactrain"
 		"hull" 6600
 		"required crew" 123
 		"bunks" 199
-		"mass" 3990
+		"mass" 4444
 		"drag" 63.1
 		"heat dissipation" .17
 		"fuel capacity" 599
@@ -1157,7 +1157,7 @@ ship "Bactrain"
 			"hull damage" 1900
 			"hit force" 4400
 	outfits
-		"Energy Blaster" 29
+		"Energy Blaster" 28
 		"Meteor Missile Launcher" 4
 		"Meteor Missile" 120
 		"Sidewinder Missile Launcher" 4
@@ -1260,3 +1260,111 @@ ship "Bactrain"
 	explode "huge explosion" 30
 	"final explode" "final explosion large"
 	description "The 'Bactrain' is the product of low-oxygen pirate minds, and a lot of welding."
+
+ship "Rocket Microdrone"
+	sprite "ship/combat drone"
+	thumbnail "thumbnail/combat drone"
+	"never disabled"
+	attributes
+		category "Microdrone"
+		"cost" 30000
+		"hull" 350
+		"automaton" 1
+		"mass" 18
+		"drag" .59
+		"heat dissipation" .9
+		"outfit space" 35
+		"weapon capacity" 5
+		"engine capacity" 25
+
+		weapon
+			"blast radius" 100
+			"shield damage" 620
+			"hull damage" 490
+			"hit force" 111
+	outfits
+		"Heavy Rocket Interlock Bypass"
+		"Heavy Rocket"
+		"Supercapacitor"
+		"Microdrone Active Cooler"
+		
+		"Compact Ion Flash Engines"
+		
+	engine -8.5 28.5 0.9
+	engine 8.5 28.5 0.9
+	gun 0 -29
+	explode "small explosion"
+	description "Rocket Microdrones are disposable units meant to be deployed and forgotten. They do not have reactors or shields and only the minimum viable hull plating. This model is equipped with a Heavy Rocket Interlock Bypass to further lean into the disposable nature of microdrones."
+	description "	Drones do not come equipped with a hyperdrive. You cannot carry a microdrone unless you have a ship in your fleet with a microdrone bay."
+
+ship "Swarm Falcon"
+	sprite "ship/falcon"
+	thumbnail "thumbnail/falcon"
+	attributes
+		category "Heavy Warship"
+		"cost" 10900000
+		"shields" 12800
+		"hull" 3700
+		"required crew" 52
+		"bunks" 91
+		"mass" 1260
+		"drag" 11.4
+		"heat dissipation" .42
+		"fuel capacity" 600
+		"cargo space" 130
+		"outfit space" 560
+		"weapon capacity" 250
+		"engine capacity" 150
+		weapon
+			"blast radius" 160
+			"shield damage" 1600
+			"hull damage" 800
+			"hit force" 2400
+	outfits
+		"Plasma Cannon" 4
+		"Plasma Turret" 2
+		
+		"Breeder Reactor"
+		"LP144a Battery Pack"
+		"D41-HY Shield Generator"
+		"Small Radar Jammer" 2
+		"Liquid Nitrogen Cooler"
+		"Laser Rifle" 15
+		
+		"A520 Atomic Thruster"
+		"A525 Atomic Steering"
+		"Hyperdrive"
+		
+	gun -16 -86.5
+	gun 16 -86.5
+	gun -19 -76.5
+	gun 19 -76.5
+	turret -16 -29
+	turret 16 -29
+	engine -16.5 143
+	engine 16.5 143
+	bay "Microdrone" -49.5 39.5
+		over
+	bay "Microdrone" 49.5 39.5
+		over
+	bay "Microdrone" -50.5 86.5
+		over
+	bay "Microdrone" 50.5 86.5
+		over
+	bay "Microdrone" -49.5 47
+		under
+	bay "Microdrone" 49.5 47
+		under
+	bay "Microdrone" -50.5 94.5
+		under
+	bay "Microdrone" 50.5 94.5
+		under
+	leak "leak" 30 50
+	leak "flame" 50 80
+	leak "big leak" 60 30
+	explode "tiny explosion" 40
+	explode "small explosion" 55
+	explode "medium explosion" 60
+	explode "large explosion" 40
+	"final explode" "final explosion medium"
+	description "The Tarazed Falcon is one of the most powerful warships that civilians can buy. This version has its pontoons modified into microdrone bays at the expense of the turrets which normally reside there. In its standard configuration, this allows it to dish out high shield damage with its Plasma Cannons, then release eight Combat Microdrones to shred the target's hull right quick with their Snubnose Gatlings."
