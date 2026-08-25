@@ -855,6 +855,7 @@ outfit "Vertical Hai Tracker And Grabber Cluster"
 	"outfit space" -30
 	"weapon capacity" -30
 	"turret mounts" -1
+
 	"tracker capacity" 56
 	weapon
 		sprite "projectile/tracker"
@@ -867,6 +868,7 @@ outfit "Vertical Hai Tracker And Grabber Cluster"
 		"hit effect" "tracker impact"
 		"hit effect" "tracker cloud" 3
 		"die effect" "tracker impact"
+		"turret turn" 0.01
 		"inaccuracy" 360
 		"velocity" 4
 		"lifetime" 475

@@ -527,8 +527,8 @@ ship "prot"
 	description `prot smol`
 
 ship "Combat Microdrone"
-	sprite "ship/flivverdrone"
-	thumbnail "ship/flivverdrone"
+	sprite "ship/flivverdronesmall"
+	thumbnail "ship/flivverdronesmall"
 	"never disabled"
 	attributes
 		category "Microdrone"
@@ -1368,3 +1368,49 @@ ship "Swarm Falcon"
 	explode "large explosion" 40
 	"final explode" "final explosion medium"
 	description "The Tarazed Falcon is one of the most powerful warships that civilians can buy. This version has its pontoons modified into microdrone bays at the expense of the turrets which normally reside there. In its standard configuration, this allows it to dish out high shield damage with its Plasma Cannons, then release eight Combat Microdrones to shred the target's hull right quick with their Snubnose Gatlings."
+
+ship "Finchdock"
+	sprite "ship/finchdock"
+	thumbnail "ship/finchdock"
+	attributes
+		category "Utility"
+		"cost" 65000
+		"shields" 200
+		"hull" 600
+		"required crew" 1
+		"bunks" 2
+		"mass" 150
+		"drag" 8.7
+		"heat dissipation" .56
+		"fuel capacity" 300
+		"cargo space" 10
+		"outfit space" 99
+		"weapon capacity" 10
+		"engine capacity" 37
+		weapon
+			"blast radius" 28
+			"shield damage" 280
+			"hull damage" 140
+			"hit force" 420
+	outfits
+		"nGVF-AA Fuel Cell"
+		"D14-RN Shield Generator"
+
+		"X1700 Ion Thruster"
+		"X1200 Ion Steering"
+		"Hyperdrive"
+
+	engine -11.5 54
+	engine 11.5 54
+	gun -29.9 -7.8
+	gun 29.9 -7.8
+	bay "Fighter" 0 0
+		"over"
+		"launch effect" "human external"
+	leak "leak" 60 50
+	leak "flame" 50 80
+	explode "tiny explosion" 20
+	explode "small explosion" 15
+	explode "medium explosion" 15
+	"final explode" "final explosion small"
+	description "When even an interceptor is too sluggish, the Finchdock is here provide the bare minimum needed for interstellar transport of a pilot's beloved fighter."
