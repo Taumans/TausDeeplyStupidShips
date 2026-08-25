@@ -1,5 +1,7 @@
 category "ship"
 	"Microdrone"
+	"Partitioned Interceptor"
 
 category "bay type"
 	"Microdrone"
+	"Partitioned Interceptor"

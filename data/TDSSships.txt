@@ -1414,3 +1414,163 @@ ship "Finchdock"
 	explode "medium explosion" 15
 	"final explode" "final explosion small"
 	description "When even an interceptor is too sluggish, the Finchdock is here provide the bare minimum needed for interstellar transport of a pilot's beloved fighter."
+
+ship "Stolsaqra II"
+	plural "Stolsaqran"
+	sprite "ship/stolsaqra"
+	thumbnail "thumbnail/stolsaqra"
+	attributes
+		category "Partitioned Interceptor"
+		"cost" 450000
+		"shields" 1850
+		"hull" 4990
+		"required crew" 1
+		"bunks" 1
+		"mass" 105
+		"drag" 2
+		"heat dissipation" 0.79
+		"cargo space" 5
+		"outfit space" 172
+		"weapon capacity" 90
+		"engine capacity" 70
+		"multimodal armor" 1
+		"hull repair rate" 0.3
+		"hull energy" 0.33
+		"hull heat" 0.33
+		weapon
+			"blast radius" 100
+			"shield damage" 1000
+			"hull damage" 500
+			"hit force" 1500
+	outfits
+		`"Ojet" Bimodal Coilgun` 3
+
+		"Primary Power Reserve"
+		"Auxiliary Power Reserve"
+		"Multimodal Armor: Light"
+		`"Chyyra" Inductive Thruster`
+		`"Aqra" Inductive Steering`
+		`"Aqra" Inductive Reverser`
+
+	gun 0 -40
+	gun -10.5 -20
+	gun 10.5 -20
+	engine -8 35
+	engine 8 35
+	"steering engine" 4 -41
+		zoom .4
+		over
+		left
+		angle 270
+	"steering engine" -4 -41
+		zoom .4
+		over
+		right
+		angle 90
+	"steering engine" 12 33
+		zoom .4
+		over
+		right
+		angle 270
+	"steering engine" -12 33
+		zoom .4
+		over
+		left
+		angle 90
+	"reverse engine" 15 -3
+		zoom .8
+		over
+	"reverse engine" -15 -3
+		zoom .8
+		over
+	leak "leak" 50 50
+	leak "flame" 30 80
+	explode "tiny explosion" 18
+	explode "small explosion" 36
+	explode "medium explosion" 24
+	explode "large explosion" 8
+	"final explode" "final explosion medium"
+	description "This experimental design attempts to address the shortcomings of the Stolsaqra by offloading several key systems to a paired vessel. The Stolsaqra II has no hyperdrive, energy generation, or shield generation. It relies on docking with the Aclo-Seiitej for interstellar travel and rapid resupply. This allows for only a short effective runtime, but greatly increased performance during that period relative the earlier Stolsaqra."
+
+ship "Aclo-Seiitej"
+	plural "Seiitejen"
+	sprite "ship/aclo-seiitej"
+	thumbnail "ship/aclo-seiitej"
+	attributes
+
+		category "Utility"
+		"cost" 2250000
+		"shields" 8000
+		"hull" 19000
+		"required crew" 1
+		"bunks" 2
+		"mass" 320
+		"drag" 7.2
+		"heat dissipation" .60
+		"fuel capacity" 600
+		"cargo space" 20
+		"outfit space" 234
+		"weapon capacity" 45
+		"engine capacity" 58
+		"multimodal armor" 1
+		"hull repair rate" 0.95
+		"hull energy" 1.045
+		"hull heat" 1.045
+		"cloak" .03
+		"cloaked shield permeability" 1
+		"cloaking energy" 5
+		"cloaking fuel" .08
+		"cloaked communication" 1
+		weapon
+			"blast radius" 100
+			"shield damage" 1000
+			"hull damage" 500
+			"hit force" 1500
+	outfits
+		`"Ryuit" Fusion Core`
+		"Auxiliary Power Reserve"
+		`"Jaase" Shield Cortex`
+		"Successor Cooling"
+		"Successor Fuel Sail"
+		"Multimodal Armor: Regen"
+
+		`"Chyyra" Inductive Thruster`
+		`"Aqra" Inductive Steering`
+		"Hyperdrive"
+
+	gun -10 -78
+	gun 10 -78
+	engine -25 44
+	engine 25 44
+	"reverse engine" -25 -35
+		zoom .7
+	"reverse engine" 25 -35
+		zoom .7
+	"steering engine" -44 34
+		left
+		angle 90
+		zoom .5
+		over
+	"steering engine" 44 34
+		right
+		angle 270
+		zoom .5
+		over
+	"steering engine" -26.3 -59.4
+		right
+		angle 90
+		zoom .4
+	"steering engine" 26.3 -59.4
+		left
+		angle 270
+		zoom .4
+	bay "Partitioned Interceptor" 0 -52
+		over
+	leak "leak" 50 50
+	leak "flame" 30 80
+	explode "tiny explosion" 18
+	explode "small explosion" 36
+	explode "medium explosion" 24
+	explode "large explosion" 8
+	"final explode" "final explosion medium"
+	description `This is the other half of the Stolsaqra II Partitioned Interceptor. Its purpose is to transport both vessels between star systems, and provide rapid repair and resupply to the Stolsaqra II. Being an advanced experimental vessel, it has been outfitted with rare Predecessor cloaking technology upon which it must rely as it has no offensive capability on its own.`
