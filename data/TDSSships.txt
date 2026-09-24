@@ -1573,4 +1573,39 @@ ship "Aclo-Seiitej"
 	explode "medium explosion" 24
 	explode "large explosion" 8
 	"final explode" "final explosion medium"
-	description `This is the other half of the Stolsaqra II Partitioned Interceptor. Its purpose is to transport both vessels between star systems, and provide rapid repair and resupply to the Stolsaqra II. Being an advanced experimental vessel, it has been outfitted with rare Predecessor cloaking technology upon which it must rely as it has no offensive capability on its own.`
+	description `This is the other half of the Stolsaqra II Partitioned Interceptor. Its purpose is to transport both vessels between star systems, and provide rapid repair and resupply to the Stolsaqra II. Being an advanced experimental vessel, it has been outfitted with rare Predecessor cloaking technology upon which it must rely as it is slow and has no offensive capability on its own.`
+
+ship "Turret Microdrone"
+	sprite "ship/flivverdronesmall"
+	thumbnail "ship/flivverdronesmall"
+	"never disabled"
+	attributes
+		category "Microdrone"
+		"cost" 30000
+		"hull" 350
+		"automaton" 1
+		"mass" 18
+		"drag" .59
+		"heat dissipation" .9
+		"outfit space" 35
+		"weapon capacity" 5
+		"engine capacity" 25
+		thrust -9
+		weapon
+			"blast radius" 5
+			"shield damage" 50
+			"hull damage" 25
+			"hit force" 75
+	outfits
+		"KGS Mini Blaster"
+		"Supercapacitor"
+		"Microdrone Active Cooler"
+		
+		"Compact Ion Flash Engines"
+		
+	engine -8.5 28.5 0.9
+	engine 8.5 28.5 0.9
+	gun 0 -29
+	explode "tiny explosion" 15
+	description "Combat Microdrones are disposable units meant to be deployed and forgotten. They do not have reactors or shields and only the minimum viable hull plating. This model has just enough forward thrust to maneuver into a microdrone bay. It is meant to serve as a more-or-less stationary deployable turret."
+	description "	Drones do not come equipped with a hyperdrive. You cannot carry a microdrone unless you have a ship in your fleet with a microdrone bay."

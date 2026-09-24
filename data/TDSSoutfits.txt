@@ -444,7 +444,6 @@ effect "improved shard impact"
 	"velocity scale" 0
 
 outfit "Anti-Mini-Blaster-Missile"
-	"display name" "Mini Blaster"
 	category "Guns"
 	series "Guns"
 	index 01010
@@ -934,3 +933,159 @@ outfit "Heavy Rocket Interlock Bypass"
 	description "	Ammunition for this weapon can be restocked at any outfitter."
 		to display
 			has "gamerule: universal ammo restocking"
+
+outfit "SAIL"
+	category "Engines"
+	series "Engines"
+	index 01040
+	cost 140000
+	thumbnail "outfit/laser turret"
+	"mass" 22
+	"outfit space" -22
+	"engine capacity" -22
+	"turret mounts" -1
+	"required crew" 1
+	weapon
+		sprite "projectile/tinyflare"
+			"frame rate" 1
+		"hardpoint sprite" "hardpoint/laser turret"
+		sound "laser"
+		"hit effect" "beam laser impact"
+		"turret turn" 1
+		"velocity" 1
+		"lifetime" 1
+		"reload" 1
+		"firing energy" -1
+		"firing heat" 10
+		"firing force" -10
+	description "SAIL through the stars! This form of propulsion needs a turret mount, but can take you in any direction. (set mouse turret aim to ON)"
+
+outfit "Paracausal Fuel Generator"
+	category "Secondary Weapons"
+	series "Secondary Weapons"
+	index 01080
+	cost 15000
+	thumbnail "outfit/fuel pod"
+	"mass" 3
+	"outfit space" -4
+	"gun ports" -1
+	"rocket capacity" 1
+	weapon
+		icon "icon/mhd"
+		"reload" 60
+		"firing ion" 300
+		"firing burn" 1000
+		"firing fuel" -100
+	description "This outfit will, by some means, at some point in the future, generate fuel. You can have that fuel right now, at the push of a button. The paracausal forces in play will demand a steep cost in energy and fuel for this exchange, paid in installments. Do not default on this loan."
+
+outfit "Thump V20"
+	category "Guns"
+	series "Guns"
+	index 01090
+	cost 50000
+	thumbnail "outfit/particle cannon"
+	"mass" 20
+	"outfit space" -20
+	"weapon capacity" -20
+	"gun ports" -1
+	weapon
+		sprite "projectile/fusion gun bolt"
+		sound "particle"
+		"hit effect" "particle impact"
+		"inaccuracy" .1
+		"velocity" 30
+		"lifetime" 15
+		"reload" 240
+		"firing energy" 200
+		"firing ion" 1
+		"firing force" 180
+		"firing heat" 1160
+		"firing burn" 1
+		"hit force" 1440
+		"shield damage" 780
+		"hull damage" 444
+	description "The Thump series comes in various sizes, but all with the same goal - one main weapon per ship, as large and powerful as reasonably possible. A single very energetic package to deliver maximum damage followed by a long reload during which the ship is free to maneuver."
+
+outfit "Thump V40"
+	category "Guns"
+	series "Guns"
+	index 01090
+	cost 220000
+	thumbnail "outfit/particle cannon"
+	"mass" 40
+	"outfit space" -40
+	"weapon capacity" -40
+	"gun ports" -1
+	weapon
+		sprite "projectile/fusion gun bolt"
+		sound "particle"
+		"hit effect" "particle impact"
+		"inaccuracy" .1
+		"velocity" 30
+		"lifetime" 15
+		"reload" 240
+		"firing energy" 400
+		"firing ion" 2
+		"firing force" 360
+		"firing heat" 2160
+		"firing burn" 2
+		"hit force" 2880
+		"shield damage" 1560
+		"hull damage" 888
+	description "The Thump series comes in various sizes, but all with the same goal - one main weapon per ship, as large and powerful as reasonably possible. A single very energetic package to deliver maximum damage followed by a long reload during which the ship is free to maneuver."
+
+outfit "Thump V80"
+	category "Guns"
+	series "Guns"
+	index 01090
+	cost 320000
+	thumbnail "outfit/particle cannon"
+	"mass" 80
+	"outfit space" -80
+	"weapon capacity" -80
+	"gun ports" -1
+	weapon
+		sprite "projectile/fusion gun bolt"
+		sound "particle"
+		"hit effect" "particle impact"
+		"inaccuracy" .1
+		"velocity" 30
+		"lifetime" 15
+		"reload" 240
+		"firing energy" 800
+		"firing ion" 4
+		"firing force" 720
+		"firing heat" 4320
+		"firing burn" 4
+		"hit force" 5760
+		"shield damage" 3120
+		"hull damage" 1776
+	description "The Thump series comes in various sizes, but all with the same goal - one main weapon per ship, as large and powerful as reasonably possible. A single very energetic package to deliver maximum damage followed by a long reload during which the ship is free to maneuver."
+
+outfit "Thump V200"
+	category "Guns"
+	series "Guns"
+	index 01090
+	cost 500000
+	thumbnail "outfit/particle cannon"
+	"mass" 200
+	"outfit space" -200
+	"weapon capacity" -200
+	"gun ports" -1
+	weapon
+		sprite "projectile/fusion gun bolt"
+		sound "particle"
+		"hit effect" "particle impact"
+		"inaccuracy" .1
+		"velocity" 30
+		"lifetime" 15
+		"reload" 240
+		"firing energy" 2000
+		"firing ion" 10
+		"firing force" 1800
+		"firing heat" 11600
+		"firing burn" 10
+		"hit force" 14400
+		"shield damage" 7800
+		"hull damage" 4440
+	description "The Thump series comes in various sizes, but all with the same goal - one main weapon per ship, as large and powerful as reasonably possible. A single very energetic package to deliver maximum damage followed by a long reload during which the ship is free to maneuver."
